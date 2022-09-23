@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #999;
+        }
+
+        .box {
+            background: hsl(0, 0%, 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            padding: 16px 24px;
+            border-radius: 1px;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;}
+            .box::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transform: scale(0.9) translateZ(0);
+            z-index: -1;
+            filter: blur(13px);
+            background: linear-gradient(90deg,red, magenta);
+            background-size: 100% 100%;
+            animation: glw 1s linear infinite alternate;
+            }
+            
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Hello farhan
+    </div>
+
+</body>
+
+</html>
